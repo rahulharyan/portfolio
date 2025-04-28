@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'bzh=w*l($c2z3yiy-@gc4-o!dok3&49ro24kzx$p4kvj1+iy' 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True  # Set to False in production
+DEBUG = False  # Set to False in production
 
 # Allow all hosts (for now), or specify your render app hostname
 ALLOWED_HOSTS = ['*'] 
