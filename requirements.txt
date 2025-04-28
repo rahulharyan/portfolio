@@ -11,11 +11,13 @@ distlib==0.3.9
 Django==5.1.4
 djangorestframework==3.16.0
 filelock==3.16.1
+gunicorn
 idna==3.10
 Jinja2==3.1.4
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 mdurl==0.1.2
+packaging==25.0
 pillow==11.0.0
 platformdirs==4.3.6
 Pygments==2.18.0
@@ -33,4 +35,4 @@ tzdata==2024.2
 urllib3==2.2.3
 uv==0.5.7
 virtualenv==20.27.1
-gunicorn  # Added Gunicorn
+whitenoise==6.9.0
