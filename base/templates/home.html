@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+{% block content %}
+  <section class="hero">
+    <div class="hero-text">
+        <h1 style=" font-family: 'Playfair Display', serif;">Code Crafted. <br> Vision Driven.</h1>
+        <p style=" font-family: 'Playfair Display', serif;">I build sleek, scalable web apps that bring ideas to life.</p>
+      <a href="{% url "contact" %}">
+        <button class="plans-button">Contact me</i></button>
+      </a>
+    </div>
+    <div class="hero-info-card">
+        <p  style="font-family: 'Playfair Display', serif; font-size: 30px;">Rahul Haryan</p>
+        <p >Completed Bachelor’s in Computer Engineering <br>
+          Mumbai University <br>
+          CGPA: 8.0 <br>
+          
+          </p>
+        <p>Hi! I’m Rahul Haryan, a passionate and self-driven Python Full Stack Developer in training, currently pursuing a hands-on course at QSpiders, Thane.
+
+          I enjoy turning ideas into real, working web applications — from crafting the frontend using HTML, CSS, and React, to managing the backend logic with Python and Django, and building efficient databases using SQL and SQLite3.</p>
+        
+    </div>
+    
+  </section>
+
+{% endblock content %}

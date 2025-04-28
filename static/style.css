@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfcee;
+    color: #124118;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fdfcee;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #124118;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #124118;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #0c542b;
+}
+
+.call-button {
+    background-color: #0c542b;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 50%;
+    /* border: 1px solid black; */
+    margin-top: 100px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    line-height: 1.2;
+    color: #124118;
+}
+
+.hero-text p {
+    font-size: 25px;
+    color: #666;
+    margin: 20px 0;
+}
+
+.plans-button {
+    background-color: #0c542b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero-image img {
+    height: 300px;
+    max-width: 100%;
+}
+
+.hero-image {
+    max-width: 45%;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+
+/* Display my info */
+
+.hero-info-card {
+    background-color: #fffdf6;
+    /* soft light background */
+    border-left: 6px solid #124118;
+    /* elegant green accent */
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 650px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin: 40px auto 0 auto;
+    margin-right: 120px;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+/* skills page */
+
+.skills {
+    padding: 60px 20px;
+    background-color: #fdfbea;
+    /* Creamy background */
+    /* font-family: 'Poppins', sans-serif; */
+    color: #1c3b2f;
+    display: flex;
+    justify-content: center;
+}
+
+.all_skills {
+    max-width: 900px;
+    background-color: #fffdf6;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.all_skills h3 {
+    font-size: 28px;
+    color: #124023;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.all_skills p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #333333;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .all_skills {
+        padding: 30px;
+    }
+    .all_skills h3 {
+        font-size: 24px;
+    }
+    .all_skills p {
+        font-size: 16px;
+    }
+}
+
+
+/* Project page css */
+
+.projects {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fffdf6;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.projects h2 {
+    font-size: 26px;
+    color: #124023;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d1e7d1;
+    padding-bottom: 8px;
+}
+
+.projects p {
+    font-size: 17px;
+    color: #333333;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* experiance page css */
+
+.experience-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fffdf6;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: #222;
+}
+
+.exp-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #124023;
+}
+
+.exp-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.exp-card h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #444;
+}
+
+.exp-card ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.exp-card ul li {
+    margin-bottom: 10px;
+}
+
+
+/* contact page form */
+
+.contact-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fffdf6;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #222;
+}
+
+.contact-container h2 {
+    font-size: 30px;
+    color: #1a4c2f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: center;
+    color: #444;
+}
+
+.contact-details {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fffdf6;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.contact-details p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    text-align: left;
+}
+
+.contact-details a {
+    color: #007b5e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+
+/* contact form css */
+
+.contact_me_form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact_me_form form div {
+    margin-bottom: 20px;
+}
+
+.contact_me_form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact_me_form input,
+.contact_me_form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: 0.3s border;
+}
+
+.contact_me_form input:focus,
+.contact_me_form textarea:focus {
+    border: 1px solid #007BFF;
+    outline: none;
+}
+
+.contact_me_form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact_me_form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact_me_form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive adjustments for mobile and tablets */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 18px;
+        align-items: center;
+    }
+    .call-button {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .hero-text {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    .hero-text h1 {
+        font-size: 40px;
+    }
+    .hero-text p {
+        font-size: 18px;
+    }
+    .hero-image {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .hero-info-card {
+        padding: 25px;
+        margin: 20px;
+        max-width: 90%;
+        font-size: 16px;
+    }
+    .all_skills {
+        padding: 30px 20px;
+    }
+    .projects {
+        padding: 25px;
+    }
+    .projects h2 {
+        font-size: 22px;
+    }
+    .projects p {
+        font-size: 16px;
+    }
+    .experience-container {
+        padding: 25px;
+    }
+    .exp-card h3,
+    .exp-card h4 {
+        font-size: 20px;
+    }
+    .contact-container {
+        padding: 20px;
+    }
+    .contact-container h2 {
+        font-size: 24px;
+    }
+    .contact-container p {
+        font-size: 16px;
+    }
+    .contact-details p {
+        font-size: 16px;
+    }
+    .plans-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

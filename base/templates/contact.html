@@ -1,0 +1,30 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="contact-container">
+    <h2 style="font-family: 'Playfair Display', serif; font-size:40px">📞 Contact Me</h2>
+    <p style="font-family: 'Playfair Display', serif;">If you'd like to connect, collaborate, or know more about my work, feel free to reach out to me using the details below or the contact form.</p>
+    
+    <div class="contact-details">
+        <p><strong>Email:</strong> rahulharyan2002@gmail.com</p>
+        <p><strong>Phone:</strong> +91 7057368420</p>
+        <p><strong>Location:</strong> Diva, Thane, Maharashtra</p>
+        <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/rahul2" target="_blank">linkedin.com/in/rahul2</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/rahulharyan" target="_blank">github.com/rahulharyan</a></p>
+    </div>
+    <div class="contact_me_form">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {% for i in form %}
+             <div style="margin-bottom: 15px;">
+                {{i.label_tag}} <br>
+                {{i}}
+                {% if i.errors %}
+                    <div style="color: red;">{{i.errors}}</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% block content %}
+
+<center>
+    <div class="projects">
+        {% for i in all_project %}
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 40px; ">{{i.pname}}</h2>
+            <p>{{i.pdesc}}</p>
+        {% endfor %}
+    </div>
+</center>
+{% endblock content %}

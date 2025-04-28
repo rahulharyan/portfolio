@@ -1,0 +1,22 @@
+<header class="navbar">
+    <div class="logo">
+      <h2 style=" font-family: 'Playfair Display', serif;">&lt;Rahul Haryan /&gt;</h2>
+    </h2>
+      {% comment %} <span><Rahul Haryan /></span> {% endcomment %}
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="{% url 'home' %}">About</a></li>
+        <li> <a href="{% url 'skills' %}">Skills</a></li>
+        <li><a href="{% url 'project' %}">Projects</a></li>
+        <li><a href="{% url 'experiance' %}">Experience</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="{% url 'contact' %}">
+      <button class="call-button">Call</button>
+    </a>
+</header>
+  
+
+  
