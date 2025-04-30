@@ -1,6 +1,6 @@
 from pathlib import Path
 import os
-import dj_database_url
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -59,21 +59,13 @@ TEMPLATES = [
 WSGI_APPLICATION = 'mywebsite.wsgi.application'
 
 # Use SQLite for development
-import dj_database_url
 
-if os.getenv('RENDER'):
-    DATABASES = {
-        'default': dj_database_url.config(
-            default='postgresql://portfolio_user_data_user:8l4LaJpeXJhOjqhr1fXWOZ96HmTolG3K@dpg-d07qn3pr0fns73dt2kvg-a:5432/portfolio_user_data'
-        )
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # This stores the database file in your project directory
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+}
 
 
 # Password validation
