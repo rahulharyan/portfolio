@@ -59,21 +59,22 @@ TEMPLATES = [
 WSGI_APPLICATION = 'mywebsite.wsgi.application'
 
 # Use SQLite for development
+import dj_database_url
+
 if os.getenv('RENDER'):
-    # When hosted on Render
     DATABASES = {
         'default': dj_database_url.config(
-            default='postgresql://portfolio_user_data_user:8l4LaJpeXJhOjqhr1fXWOZ96HmTolG3K@dpg-d07qn3pr0fns73dt2kvg-a/portfolio_user_data'
+            default='postgresql://portfolio_user_data_user:8l4LaJpeXJhOjqhr1fXWOZ96HmTolG3K@dpg-d07qn3pr0fns73dt2kvg-a:5432/portfolio_user_data'
         )
     }
 else:
-    # Local laptop
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
+
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
