@@ -92,10 +92,4 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'  # Required for Render deployment
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# Email configuration
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'rahulharya2002@gmail.com'  # Your Gmail address
-EMAIL_HOST_PASSWORD = 'lmza sxvi judb ibxc'     # App password generated from Gmail
+
