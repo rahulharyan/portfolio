@@ -2,6 +2,7 @@ from pathlib import Path
 import os
 
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -89,3 +90,12 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'  # Required for Render deployment
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Email configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'rahulharya2002@gmail.com'  # Your Gmail address
+EMAIL_HOST_PASSWORD = 'lmza sxvi judb ibxc'     # App password generated from Gmail
